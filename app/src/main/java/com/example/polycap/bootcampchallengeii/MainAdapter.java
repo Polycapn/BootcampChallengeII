@@ -38,7 +38,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
         holder.title.setText(lists.get(position).getTitle());
-        holder.desc.setText(lists.get(position).getDesc());
         holder.row.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,12 +71,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         // each data item is just a string in this case
         TextView title;
         View row;
-        TextView desc;
 
         public ViewHolder(View v) {
             super(v);
             title = (TextView) v.findViewById(R.id.title);
-            desc = (TextView) v.findViewById(R.id.desc);
             row = v.findViewById(R.id.row_layout);
         }
 

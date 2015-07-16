@@ -5,19 +5,11 @@ package com.example.polycap.bootcampchallengeii;
  */
 public class list {
     String title;
-    String desc;
-
-    public list(String title, String desc) {
+    public list(String title) {
         this.title = title;
-        this.desc =  desc;
     }
 
     public String getTitle(){
         return title;
     }
-
-    public String getDesc(){
-        return desc;
-    }
-
 }
